@@ -27,7 +27,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ff
       console.log('Success');
   });
 });
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname+'/index.html'));
 
 })
